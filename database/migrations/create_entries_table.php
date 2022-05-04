@@ -20,6 +20,7 @@ class CreateEntriesTable extends Migration
             $table->boolean('published')->default(true);
             $table->string('status');
             $table->string('slug');
+            $table->string('title')->nullable();
             $table->string('uri')->nullable();
             $table->string('date')->nullable();
             $table->string('collection');

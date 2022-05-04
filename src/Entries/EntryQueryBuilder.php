@@ -12,7 +12,7 @@ class EntryQueryBuilder extends EloquentQueryBuilder implements QueryBuilder
     use QueriesTaxonomizedEntries;
 
     const COLUMNS = [
-        'id', 'site', 'origin_id', 'published', 'status', 'slug', 'uri',
+        'id', 'site', 'origin_id', 'published', 'status', 'slug', 'title', 'uri',
         'date', 'collection', 'created_at', 'updated_at',
     ];
 
