@@ -33,7 +33,7 @@ class EntryQueryBuilder extends EloquentQueryBuilder implements QueryBuilder
         // * Add the title to the COLUMNS.
         // * This because it is used in control panel search
         // */
-        if (! in_array($column, array_merge(['title', self::COLUMNS]))) {
+        if (! in_array($column, array_merge(['title'], self::COLUMNS))) {
             $column = 'data->'.$column;
         }
 
