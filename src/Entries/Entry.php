@@ -16,7 +16,6 @@ class Entry extends FileEntry
             ->slug($model->slug)
             ->date($model->date)
             ->collection($model->collection)
-            ->title($model->title)
             ->data($model->data)
             ->blueprint($model->data['blueprint'] ?? null)
             ->published($model->published)
@@ -38,7 +37,6 @@ class Entry extends FileEntry
             'origin_id' => $this->originId(),
             'site' => $this->locale(),
             'slug' => $this->slug(),
-            'title' => $this->title(),
             'uri' => $this->uri(),
             'date' => $this->hasDate() ? $this->date() : null,
             'collection' => $this->collectionHandle(),
